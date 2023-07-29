@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="./favicon-32x32.png" />
+	<meta name="viewport" content="width=device-width" />
+	
+		<link href="./_app/immutable/assets/0.6be81ed6.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.8ae423bb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.f3763ce3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.f12e5b34.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.1386ed01.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.0db72c51.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.3af273ad.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.e59479a4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.09d20017.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/16.fef206c8.js">
+
+	<style>
+		body {
+			background-image: url("/seele_bg.png");
+			background-position: top;
+			margin: 0;
+			height: 100%;
+			font-family: Impact, sans-serif;
+			letter-spacing: 0.1em;
+			color: #7cf7ff;
+
+			/* -webkit-text-stroke: 1px black; */
+
+
+		}
+
+
+		hr {
+			border-color: #7cf7ff;
+			box-shadow: 0 0 10px #7cf7ff, 0 0 5px #7cf7ff;
+		}
+
+		html {
+			height: 100%;
+		}
+
+
+
+		input {
+			border-radius: 25px;
+			font-size: 1.4vw;
+		}
+
+		div {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		button {
+			border-radius: 25px;
+			color: #7cf7ff;
+			border: 1px solid #a8f3fff2;
+		}
+
+		button:hover {
+			cursor: pointer;
+		}
+
+		body {
+			scrollbar-width: thin;
+			/* "auto" or "thin" */
+			scrollbar-color: blue orange;
+			/* scroll thumb and track */
+		}
+
+		* {
+			scrollbar-width: thin;
+			scrollbar-color: blue orange;
+		}
+
+		*::-webkit-scrollbar {
+			width: 12px;
+		}
+
+		*::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		*::-webkit-scrollbar-thumb {
+			background-color: #b300ff;
+			border-radius: 20px;
+			border: 1px solid #a8f3fff2;
+			box-shadow: 0 0 5px #a8f3fff2;
+		}
+
+
+		:root {
+			--stroke-width: 1px;
+		}
+
+		.Header {
+			font-family: Impact, sans-serif;
+			margin: 0;
+			font-size: 2.5vw;
+			padding: 0;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			/* text-shadow: var(--stroke-width) var(--stroke-width) 0 #000,
+				calc(-1 * var(--stroke-width)) var(--stroke-width) 0 #000,
+				var(--stroke-width) calc(-1 * var(--stroke-width)) 0 #000,
+				calc(-1 * var(--stroke-width)) calc(-1 * var(--stroke-width)) 0 #000; */
+			-webkit-text-stroke: 0.6px black;
+		}
+
+		p {
+			font-family: Arial, sans-serif;
+			font-size: 1vw;
+		}
+
+		button, a {
+			font-size: 12px;
+			background-color: transparent;
+		}
+
+
+		.CenteringDiv {
+			display: flex;
+			align-items: center;
+			margin: 0;
+			height: 100%;
+			flex-wrap: wrap;
+		}
+
+		@media (max-width: 850px) {
+			.Header {
+				font-size: 25px;
+			}
+
+		}
+
+		@media (max-width: 850px) {
+
+
+			button, p {
+				font-size: 11px;
+			}
+		}
+	</style>
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">  <head data-svelte-h="svelte-1rf083m"><title>SeeleLand</title></head> <nav class="svelte-1ugtpeg"><div class="navParentDiv svelte-1ugtpeg"><div><a href="/" data-sveltekit-preload-data style="display:flex; " class="svelte-1ugtpeg"><div style="margin-top:-4.5vw; margin-bottom:-4.5vw;"><img src="/_app/immutable/assets/logo.c4e2f694.png" alt="Home" style="width : 4.5vw; height : 4.5vw; padding-top:0.4vw; transform: scaleX(-1);" class="svelte-1ugtpeg"></div> <p class="Header" data-svelte-h="svelte-1ui44lf">SeeleLand</p></a></div> <div class="centeringDiv svelte-1ugtpeg"><a href="/leaderboards" data-sveltekit-preload-data class="svelte-1ugtpeg"><p class="Header">Leaderboards</p> </a><a href="/armadas" data-sveltekit-preload-data class="svelte-1ugtpeg"><p class="Header">Armadas</p> </a></div> <div class="centeringDiv svelte-1ugtpeg" data-svelte-h="svelte-14d88y4"><a href="https://discord.gg/WWEFykz" data-sveltekit-preload-data target="_blank" class="svelte-1ugtpeg"><p class="Header">Discord</p></a></div></div> </nav> <div id="centerDiv" class="svelte-gact09"><p data-svelte-h="svelte-1lq27m2">ur data is safe. proper Policy coming soon.</p></div> <div id="thirdDiv" class="svelte-gact09"></div> 
+			
+			<script>
+				{
+					__sveltekit_m4u5um = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.8ae423bb.js"),
+						import("./_app/immutable/entry/app.1386ed01.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 16],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+
+</html>
